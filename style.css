@@ -30,8 +30,8 @@ nav{
 .logo{
     color: rgb(231, 211, 211);
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    letter-spacing: 3px;
+    font-size:smaller;
     margin-left: 2rem;
 }
 
@@ -50,9 +50,9 @@ nav{
 .nav-links a{
     text-decoration: none;
     color: rgb(231, 211, 211);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight:400;
-    font-size: 19px;
+    font-size: 15px;
 }
 
 .burger div{
@@ -92,7 +92,7 @@ nav{
 .picDes{
     color: white;
     width: 65%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 40px;
 }
 
