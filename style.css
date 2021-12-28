@@ -10,15 +10,23 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #1b1c1b;
 }
 
+
+/* Navigation bar */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
-    background-color: rgb(70, 43, 43);
-
+    min-height: 12vh;
+    /* background-color: rgb(70, 43, 43); */
+    background-color: transparent;
+    position: fixed;
+    width: 100%;   
+    z-index: 10;
+    padding-top:20px;
+    padding-bottom: 10px;
 }
 
 .logo{
@@ -26,12 +34,14 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    margin-left: 2rem;
 }
 
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width:30%;
+    width:40%;
+    margin-right: 2rem;
 }
 
 
@@ -43,8 +53,8 @@ nav{
     text-decoration: none;
     color: rgb(231, 211, 211);
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight:400;
+    font-size: 19px;
 }
 
 .burger div{
@@ -52,4 +62,123 @@ nav{
     height: 3px;
     background-color: white;
     margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger{
+    display: none;
+}
+
+
+/* Section 1 */
+
+.section1{
+    height: 100vh;
+    background-image: url(./img/bg/dubai1.jfif);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.section2, .section3{
+    padding: 5rem;
+    margin: 4rem auto;
+    padding:10px;
+    width:  100%;
+}
+
+.carousel-inner{
+    width: 65%;
+    max-height: 700px;
+}
+
+.picDes{
+    color: white;
+    width: 65%;
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+
+
+
+/* Media Query */
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right:0;
+        margin:0;
+        height: 92vh;
+        top:9vh;
+        background-color: #1b1c1b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        padding-top: 40px;
+        padding-bottom: 70px;
+        transform: translateX(100%);
+        transition:transform 0.5s ease-in;
+        
+    }
+    .nav-links li{
+        opacity:0;
+        padding-right:2rem;
+        margin: 0px;
+
+    }
+    
+    .nav-links a{
+        font-size: 14px;
+    }
+    .burger{
+        display:block;
+        cursor: pointer;
+        margin-right:1rem;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+ 
+
+    @keyframes navLinkFade {
+        from{
+            opacity:0;
+            transform:translateX(5px);
+
+        }
+        
+        to{
+            opacity:1;
+            transform:translateX(0px);
+        }
+    }
+
+    .toggle .line1{
+        transform:rotate(-45deg) translate(-5px,6px);
+
+    }
+
+    .toggle .line2{
+        opacity:0;
+        
+    }
+    .toggle .line3{
+        transform:rotate(45deg) translate(-5px,-6px);
+        
+    }
+
+   
+
+
 }
