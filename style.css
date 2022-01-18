@@ -41,7 +41,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width:40%;
+    width:70%;
     margin-right: 2rem;
 }
 
@@ -67,29 +67,6 @@ nav{
     transition-duration: 0.3s;
 }
 
-
-
-/* .nav-links li a::before{
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 100%; */
-    /* background: goldenrod;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
-    transition-delay: 0s; */
-
-
-/* .nav-links li a:hover ::before{
-    transform: scaleX(1);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-    transition-delay:1s;
-} */
-
 .burger div{
     width: 25px;
     height: 3px;
@@ -102,11 +79,6 @@ nav{
     display: none;
 }
 
-
-
-
-
-
 /* Section 1 */
 
 .section1{
@@ -117,33 +89,27 @@ nav{
 }
 
 .section1 div{
-    /* width: 90%; */
-    height: 22vh;
+    margin-top: 0;
+    height: 30vh;
     align-content: center;
     justify-content: center;
-    padding-top:15%;
+    padding-top:8rem;
     margin-left: 0.2rem;
-
-
-
-    /* opacity: 0.2; */
-    /* background-color: rgb(180, 72, 72); */
 }
-.section1 div div{
+.hero_text{
     color: white;
     background: rgba(43, 41, 33, 0.4);
-    /* background-image: url(./img/bg/vertical_cloth.png); */
-    padding: 2rem 2rem;
+    padding: 3rem 2rem!important;
     border-left: 14px solid rgb(212, 164, 5);
 }
 
-.section1 div div h1{
+.hero_text h1{
     font-size: 4rem;
     font-weight: bolder;
     letter-spacing: 8px;
 }
 
-.section1 div div p{
+.hero_text p{
     font-size: 2rem;
     letter-spacing: 6px;
 }
@@ -158,11 +124,6 @@ nav{
     width: 60%;
     max-height: 600px;
 }
-
-/* .carousel-item img{
-    object-fit: cover!important;
-} */
-
 
 .venue_intro{
     color: white;
@@ -185,23 +146,13 @@ nav{
     transform: translateX(-50%);
 }
 
-/* .speaker_section{
-    padding:5rem;
-}
-
 .speaker_div{
-    display: flex;
-    flex-direction: column;
-
-} */
-
-.speaker_div{
-    /* background-color: rgb(255, 252, 245); */
     width: 100%;
-    /* background-image: url(./img/bg/rm380-10.jpg); */
-    background-repeat: repeat;
-    background-size: 100% 100%;
+    /* background-repeat: repeat;
+    background-size: 100% 100%; */
     padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-image: url(./img/bg/webb-dark.png);
 }
 
 .speakers_intro{
@@ -211,6 +162,7 @@ nav{
     padding-left: 0;
     width: 100%;
     margin: 0!important;
+    text-align: center;
 }
 
 .speakers_intro p{
@@ -220,25 +172,21 @@ nav{
 }
 
 .speakers_intro h3{
+    width: 90%;
     font-size: 3rem;
     text-transform: uppercase;
     padding: 1rem;
     letter-spacing: 3px;
     color: goldenrod;
-    background-color:rgba(190, 190, 180, 0.2);
+    /* background-color:rgba(190, 190, 180, 0.2); */
+    width: 40%;
+    text-align: center;
     font-weight: bold;
+    margin-left:50%;
+    transform:translateX(-50%);
+    /* background-color: rgb(240, 240, 231); */
+    border:solid 2px rgb(240, 240, 231);
 }
-
-
-
-
-
-/* .speakers{
-    border-radius: 25%;
-    width: 100px;
-    height: 100px;
-
-} */
 
 .col img{
     object-fit: cover;
@@ -258,16 +206,12 @@ nav{
     color: white;
     gap: 5rem;
     align-items: center;
-    background-color: rgb(26, 26, 8);
+    background-color: rgb(240, 240, 231);
     align-content: space-around;
     justify-content: space-between;
 }
 
 .mission_statement img{
-    /* width: 150%;
-    min-width: 500px;
-    max-width: 2000px; */
-    /* padding: 0.5rem; */
     object-fit: fill !important;
     width: 100%;
 }
@@ -276,8 +220,6 @@ nav{
 }
 .mission_image {
     width: 100%;
-    /* background-color: red; */
-    /* object-fit: contain!important; */
     padding: 0;
 }
 
@@ -288,7 +230,6 @@ nav{
     letter-spacing: 2px;
     width: 70%;
     background-color: goldenrod;
-
 }
 
 .mission blockquote{
@@ -297,94 +238,40 @@ nav{
     line-height: 50px;
     letter-spacing: 2px;
     padding-top: 1rem;
-}
-.partner{
-    margin:3rem auto;
-    color: white;
-    background-image: url(./img/bg/leather);
-    background-repeat: none;
-    background-size: cover;
-}
-
-.partner #partner_intro{
-    padding:auto;
-    text-align: center;
-    background: rgba(33, 34, 34, 0.2);
-    display: block;
-    width: 100%;
-    padding: 1.5rem;
-    margin-bottom: 0;
-    /* text-align: left; */
-    /* padding-left: 50%;
-    transform: translateX(-20%); */
-
-}
-
-/* .section5 #partner_intro div p i{
-    color: white;
-} */
-
-.partner #partner_intro h3{
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: rgb(236, 206, 104);
-
-    padding:1.5rem;
-    /* border-left: solid white 8px; */
-    /* border-bottom: solid 2px rgb(243, 218, 138); */
-    background:rgba(122, 122, 117, 0.2)
-    /* background-color:rgba(190, 190, 180, 0.2); */
-    /* text-align: center; */
-    
-}
-
-.partner #partner_intro div{
-    padding-top: 1.1rem;
-}
-
-/* .partner #partner_intro div p{
-    font-size: 1.3rem;
-    line-height: 2rem; 
-} */
-
-
-.partner .card{
     color: black;
-    margin: 1rem 2rem;
-    padding:0.3rem 2rem;
-    background-image:url(./img/bg/abstract-luxury-gold-yellow-gradient-studio-wall-well-use-as-background-layout-banner-product-presentation.jpg);
-    /* background-color: rgb(207, 162, 65); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* padding-bottom: 4rem; */
-    /* border-radius: 10%; */
-    
+}
+.options{
+    margin:1rem auto;
+    padding: 1.5rem;
+    color: black;
 }
 
-.partner #partner_intro{
-    line-height: 25px;
+#options_intro h3{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    background-color:rgba(190, 190, 180, 0.2);
+    padding: 1rem;
 }
-.card-title{
-    padding-bottom: 1rem;
+
+.options .card-title{
     font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    padding:1.5rem;
+    background:goldenrod;
 }
 
-.partner .card-body{
-    line-height: 35px;
-}
-
-.partner .card-body ul li{
-    /* list-style:none ; */
-    padding-bottom: 12px;
-
-    font-size: 1.1rem;
-    line-height: 30px;
+.options .card{
+    background: #f3ce18;
+    background: -webkit-radial-gradient(top left, #f3d78b, #F1F2F4);
+    background: -moz-radial-gradient(top left, #a18706, #F1F2F4);
+    background: radial-gradient(to bottom right, #f0d23c, #F1F2F4);
 }
 
 .venue_section{
     padding: 2rem;
     padding-bottom: 5rem; 
-    /* background-color: rgb(207, 186, 186); */
     background-image: url(./img/bg/webb-dark.png);
 }
 
@@ -394,8 +281,6 @@ nav{
     color: goldenrod;
     padding:1.5rem;
     background:rgba(211, 211, 190, 0.4);
-
-
 }
 
 footer{
@@ -430,7 +315,6 @@ footer p{
     font-weight: lighter;
 }
 
-
 footer i{
     padding:0.5rem;
 }
@@ -447,15 +331,119 @@ footer i:hover{
 
 
 /* Media Query */
-@media screen and (max-width:1024px){
+
+/* Desktop breaking points */
+@media screen and (max-width:1290px){
     .nav-links{
-        width: 60%;
+        width: 70%;
         color: white;
     }
+
+    .section1{
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+    .section1 div{
+        height: 28vh;
+        justify-content: center;
+    }
+
+    .hero_text h1{
+        font-size: 2.5rem;
+    }
+
+    .hero_text p{
+        font-size: 1.6rem;
+    }
+
+    .mission_statement{
+        flex-direction: column;
+    }
+    .mission blockquote{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+   
+    .mission h3{
+        font-size: 2rem;
+        padding:1rem;
+        width: 100%;
+    }
+
+    .col img{
+        width: 160px;
+        height: 160px;
+    }
+
     
 }
 
-@media screen and (max-width:768px){
+/* Tablet breaking points */
+@media screen and (max-width: 992px){
+    .nav-links{
+        width: 80%;
+    }
+    .nav-links a{
+        font-size: 1rem;
+    }
+    .section1{
+        margin-top: 0;
+        padding-top: 10rem;
+    }
+    .section1 div{
+        height: 15vh;
+        justify-content: center;
+        padding-top: 2.8rem!important;
+    }
+
+    .hero_text h1{
+        font-size: 3.5rem;
+    }
+
+    .mission_statement{
+        flex-direction: column;
+    }
+    .mission blockquote{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+   
+    .mission h3{
+        font-size: 2rem;
+        padding:1rem;
+        width: 100%;
+    }
+
+    .col img{
+        width: 220px;
+        height: 220px;
+    }
+
+    .carousel-inner{
+        width: 90%;
+        max-height: 600px;
+    }
+
+    .venue_intro p{
+        width: 90%;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    .options .card-title{
+        font-size: 1.5rem;
+    }
+
+    .speakers_intro h3{
+        width: 90%;
+    }
+
+
+}
+
+
+/* landscape phones breaking points */
+@media screen and (max-width:767px){
     body{
         overflow-x:hidden;
     }
@@ -545,27 +533,26 @@ footer i:hover{
         height: 140px;
     }
 
-    .section1 div div h1{
+    .section1{
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+    .section1 div{
+        height: 38vh;
+    }
+    .hero_text h1{
         font-size: 3rem;
         
     }
 
-    .section1 div div p{
+    .hero_text p{
         font-size: 1.2rem;
-    }
-
-    .section1 div{
-        height: 38vh;
     }
 
     .venue_intro p{
         width: 100%;
         font-size: 1.1rem;
         padding: 0.5rem;
-    }
-
-    .partner #partner_intro h3{
-        font-size: 2.2rem;
     }
 
     .mission h3{
@@ -586,9 +573,59 @@ footer i:hover{
 
     .speakers_intro h3{
         font-size: 2rem;
+        width: 90%;
     }
 
     .speakers_intro p{
         font-size: 1.2rem;
     }
+
+
+    .options .card-title{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* breaking point of small devices */
+@media screen and (max-width:576px){
+    .col img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .section1 div{
+        height: 25vh;
+    }
+    .hero_text h1{
+        font-size: 2rem!important;
+        font-weight: bolder;
+        letter-spacing: 8px;
+    }
+
+    .options_intro h3{
+        font-size: 2rem !important;
+    }
+
+    .speakers_intro h3{
+        font-size: 2.2rem;
+    } 
+
+    .speakers_intro p{
+        font-size: 1.4rem;
+    } 
+    footer p{
+        font-size: 0.9rem;
+    }
+
+    footer h6{
+        font-size: 0.8rem;
+    }
+
+    .vl{
+        font-size: 1rem;
+    }
+
+
 }
