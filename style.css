@@ -391,7 +391,7 @@ footer i:hover{
         padding-top: 10rem;
     }
     .section1 div{
-        height: 15vh;
+        height: 20vh;
         justify-content: center;
         padding-top: 2.8rem!important;
     }
@@ -536,9 +536,10 @@ footer i:hover{
     .section1{
         margin-top: 0;
         padding-top: 3rem;
+
     }
     .section1 div{
-        height: 38vh;
+        height: 45vh;
     }
     .hero_text h1{
         font-size: 3rem;
