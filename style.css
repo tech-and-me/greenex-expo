@@ -113,12 +113,12 @@ nav{
     font-size: 2rem;
     letter-spacing: 6px;
 }
-.section2, .section3{
+/* .section2, .section3{
     padding: 5rem;
     margin: 4rem auto;
     padding:10px;
     width:  100%;
-}
+} */
 
 .carousel-inner{
     width: 60%;
@@ -335,7 +335,7 @@ footer i:hover{
 /* Desktop breaking points */
 @media screen and (max-width:1290px){
     .nav-links{
-        width: 50%;
+        width: 60%;
         color: white;
     }
 
@@ -375,6 +375,9 @@ footer i:hover{
         height: 160px;
     }
 
+    .options .card-title{
+        font-size: 1.2rem;
+    }
     
 }
 
@@ -391,13 +394,13 @@ footer i:hover{
         padding-top: 10rem;
     }
     .section1 div{
-        height: 20vh;
+        height: 26vh;
         justify-content: center;
         padding-top: 2.8rem!important;
     }
 
     .hero_text h1{
-        font-size: 3.5rem;
+        font-size: 3.9rem;
     }
 
     .mission_statement{
@@ -597,10 +600,15 @@ footer i:hover{
     }
 
     .section1 div{
-        height: 25vh;
+        height: 30vh;
+        justify-content: center!important;
+        padding-top:2.5rem!important;
+        padding-bottom: 2.5rem!important;
     }
+
+
     .hero_text h1{
-        font-size: 2rem!important;
+        font-size: 1.8rem!important;
         font-weight: bolder;
         letter-spacing: 8px;
     }
