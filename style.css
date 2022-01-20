@@ -128,8 +128,8 @@ nav{
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
-    opacity: 1;
-    width: 1.5rem!important;
+    opacity: 0.6;
+    width: 1.4rem!important;
 }
 
 .carousel-control-next-icon {
@@ -605,6 +605,13 @@ footer i:hover{
         font-size: 1.5rem;
     }
 
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+    opacity: 0.8;
+    width: 1.2rem!important;
+    }
+    
+
 
 }
 
@@ -653,6 +660,11 @@ footer i:hover{
         font-size: 1rem;
     }
 
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+    opacity: 1;
+    width: 1rem!important;
+    }
     
 
 
