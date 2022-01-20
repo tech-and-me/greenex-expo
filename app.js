@@ -11,10 +11,8 @@ const navSlide = ()=>{
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links li");
-    
 
-    //toggle nav
-    burger.addEventListener("click",()=>{
+    const OnOff=()=>{
         nav.classList.toggle("nav-active");
 
         navLinks.forEach((link,index)=>{
@@ -24,13 +22,35 @@ const navSlide = ()=>{
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
             }
         });
-    
-        //burger animation
+
         burger.classList.toggle("toggle");
+    
+
+    }
+
+    //When Burger clicked
+    burger.addEventListener("click",OnOff);
+
+
+    //When navItem clicked
+    navLinks.forEach((link)=>{
+        link.addEventListener("click",OnOff)
     });
 
 
 }
+
+
+
+
+
+
+
+
+
+
 navSlide();
+
+
 
 
